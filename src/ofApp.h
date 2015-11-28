@@ -1,6 +1,6 @@
 #pragma once
-
 #include "ofMain.h"
+#include "Branch.h"
 
 class ofApp : public ofBaseApp{
 
@@ -32,6 +32,7 @@ class ofApp : public ofBaseApp{
     float theta = 45;
     
     ofCylinderPrimitive root;
+    Branch branch;
     
     ofLight light;
     ofPlanePrimitive plane;

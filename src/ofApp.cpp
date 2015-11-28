@@ -25,18 +25,9 @@ void ofApp::setup(){
     root.set(branchDimension, branchLenght, radiusSegments, heightSegments, capSegments, false, OF_PRIMITIVE_TRIANGLES);
     root.setPosition(0, 0, 0);
     
-    // if the roll transformation is applied first and the boom after,
-    // the transformed normal have length 1, as a normal should have.
-    // If the boom transformation is performed before the roll, my normals are
-    // scaled
-    bool boom_first = true;
-    if (boom_first) {
-        root.boom(branchLenght);
-        root.roll(theta);
-    }else{
-        root.roll(theta);
-        root.boom(branchLenght);
-    }
+    // first a rotation and then a translation
+    root.tilt(90);
+    root.boom(branchLenght/2);
 
     ofMatrix4x4 normalMatrix = root.getGlobalTransformMatrix().getInverse();
     ofApp::debugMatrix(normalMatrix);
@@ -47,6 +38,27 @@ void ofApp::setup(){
         finalMesh.addVertex(v * root.getGlobalTransformMatrix());
     }
     for(auto i: root.getMesh().getNormals()){
+        ofVec3f normalVector = (normalMatrix * i);
+        cout << normalVector.length() << endl;
+        finalMesh.addNormal(normalVector);
+    }
+    
+    //branch, first a translation and then a rotation
+    branch.set(branchDimension, branchLenght, radiusSegments, heightSegments, capSegments, false, OF_PRIMITIVE_TRIANGLES);
+    
+    branch.setParent(root);
+    branch.preTranslate(ofVec3f(50, 50, 50));
+    branch.roll(90.00);
+
+    ofMatrix4x4 branchNormalMatrix = branch.getGlobalTransformMatrix().getInverse();
+    ofApp::debugMatrix(normalMatrix);
+    for(auto i: branch.getMesh().getIndices()){
+        finalMesh.addIndex(i);
+    }
+    for(auto v: branch.getMesh().getVertices()){
+        finalMesh.addVertex(v * branch.getGlobalTransformMatrix());
+    }
+    for(auto i: branch.getMesh().getNormals()){
         ofVec3f normalVector = (normalMatrix * i);
         cout << normalVector.length() << endl;
         finalMesh.addNormal(normalVector);

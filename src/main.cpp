@@ -11,5 +11,4 @@ int main( ){
     settings.height = 768;
     ofCreateWindow(settings);
     ofRunApp(new ofApp());
-
 }

@@ -2,4 +2,127 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/ofApp.h"
+            timestampString = "470400321.010829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofApp::ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.907825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofApp::ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofApp::~ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908315"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofApp::~ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908476"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to ofApp::~ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908605"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to ofApp::~ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908727"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ofApp::~ofApp()"
+                  moduleName = "matrixOrderDebug"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/da1/Sources/OF/of_v0.9.0_osx_release/apps/myApps/matrixOrder/src/ofApp.h"
+                  timestampString = "470400211.908851"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
