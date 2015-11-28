@@ -51,7 +51,7 @@ void ofApp::setup(){
     branch.roll(90.00);
 
     ofMatrix4x4 branchNormalMatrix = branch.getGlobalTransformMatrix().getInverse();
-    ofApp::debugMatrix(normalMatrix);
+    ofApp::debugMatrix(branchNormalMatrix);
     for(auto i: branch.getMesh().getIndices()){
         finalMesh.addIndex(i);
     }
@@ -59,7 +59,7 @@ void ofApp::setup(){
         finalMesh.addVertex(v * branch.getGlobalTransformMatrix());
     }
     for(auto i: branch.getMesh().getNormals()){
-        ofVec3f normalVector = (normalMatrix * i);
+        ofVec3f normalVector = (branchNormalMatrix * i);
         cout << normalVector.length() << endl;
         finalMesh.addNormal(normalVector);
     }
